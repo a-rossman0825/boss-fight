@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!--Viewport-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!--Favicon-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <!--Styles-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <!--Script-->
+  <script src="script.js" defer></script>
+  <title>Star Wars Boss Fight</title>
+</head>
+<body class="bg-tatooine">
+  <main>
+    <!-- SECTION HEROES SECTION -->
+    <section class="container mt-4">
+      <div class="row g-3">
+        <div class="col-6 col-lg-3">
+          <div class="card hero-card">
+            <div class="row card-body">
+              <div class="col-6">
+                <div class="name">LUKE</div>
+                <div class="health">HP: NUM</div>
+                <div class="gold">GOLD: NUM</div>
+                <div class="level">LVL: 6</div>
+              </div>
+              <div class="col-6">
+                <img src="./media/sprites/heroes/luke.png" alt="luke skywalker" class="img-fluid object-fit-none" style="height: 150px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card hero-card">
+            <div class="row card-body">
+              <div class="col-6">
+                <div class="name">LEIA</div>
+                <div class="health">HP: NUM</div>
+                <div class="level">LVL: 6</div>
+              </div>
+              <div class="col-6">
+                <img src="./media/sprites/heroes/leia.png" alt="Princess Leia Organa" class="img-fluid object-fit-none" style="height: 150px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card hero-card">
+            <div class="row card-body">
+              <div class="col-6">
+                <div class="name">HAN</div>
+                <div class="health">HP: NUM</div>
+                <div class="level">LVL: 6</div>
+              </div>
+              <div class="col-6">
+                <img src="./media/sprites/heroes/solo.png" alt="Han Solo" class="img-fluid object-fit-none" style="height: 150px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="card hero-card">
+            <div class="row card-body">
+              <div class="col-6">
+                <div class="name">CHEWY</div>
+                <div class="health">HP: NUM</div>
+                <div class="level">LVL: 1</div>
+              </div>
+              <div class="col-6">
+                <img src="./media/sprites/heroes/chewie.png" alt="chewbacca" class="img-fluid object-fit-none" style="height: 150px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !SECTION -->
+    
+    <!-- SECTION VILLAIN SECTION -->
+    <div class="container mt-5">
+      <div class="row text-center justify-content-center">
+        <div class="col-6">
+          <div class="card villain-card">
+            <div class="card-body">
+              <div class="health-bar">Health Bar</div>
+              <div class="villain-name">Villain Name</div>
+              <img src="./media/sprites/villains/stormtrooper.png" alt="stormtrooper" class="img-fluid object-fit-none" style="height: 150px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION -->
+    
+    <!-- SECTION BUTTONS SECTION -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <div class="card store-card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6 force-heal">Force Heal: </div>
+                <div class="col-6">20G</div>
+              </div>
+              <div class="row">
+                <div class="col-6 unlock">Unlock LEIA: </div>
+                <div class="col-6">100G</div>
+              </div>
+              <div class="row">
+                <div class="col-6 unlock">Unlock HAN: </div>
+                <div class="col-6">200G</div>
+              </div>
+              <div class="row">
+                <div class="col-6 unlock">Unlock CHEWY: </div>
+                <div class="col-6">500G</div>
+              </div>
+              <div class="row">
+                <div class="col-6 force-heal">Force Drain: </div>
+                <div class="col-6">10000G</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center justify-content-end">
+        <div class="col-2">
+          <div class="card reset-card">
+            <div class="card-body">
+              RESET
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !SECTION -->
+  </main>
+</body>
+</html>
