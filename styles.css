@@ -6,24 +6,74 @@
   background-color: rgb(195, 134, 91);
 }
 
+.bg-hoth {
+  background-image: url(./media/backgrounds/hoth-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  background-position: bottom;
+}
+
+.bg-throne-room {
+  background-image: url(./media/backgrounds/throne-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: darkslategray;
+  background-position: bottom;
+}
+
+.bg-space {
+  background-image: url(./media/backgrounds/space-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.game-font {
+  font-family: "VT323", monospace;
+  font-weight: 500;
+  font-size: large;
+}
+
 .hero-card {
   border: dashed blue;
   background-color: rgb(248, 254, 209);
+  color: black;
+  text-shadow: 2px 3px 3px gray;
 }
 
 .villain-card {
   border: dashed red;
   background-color: gray;
-  color: white;
+  color: black;
+  text-shadow: 2px 3px 3px gray;
+}
+
+.healthbar {
+  color: black;
+  text-shadow: 2px 3px 3px gray;
+  font-size: 20px;
+  position: relative;
 }
 
 .store-card {
   border: dashed green;
   background-color: rgb(248, 254, 209);
+  color: black;
+  text-shadow: 2px 3px 3px gray;
 }
 
 .reset-card {
   border: dashed orange;
   background-color: rgb(206, 99, 69);
   color: white;
+    color: whitesmoke;
+  text-shadow: 1px 3px 3px black;
+}
+
+normal-villains {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  object-fit: none;
 }
