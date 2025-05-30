@@ -1,3 +1,5 @@
+// SECTION Objects
+
 const heros = [
   {
     name: "luke",
@@ -37,19 +39,16 @@ const villains = [
     reward: 20
   },
 ];
+// !SECTION 
+
+// SECTION Global Variables & Function Calls
 
 const vader = villains[0]
 let forceHeal = 0;
 drawHeros();
+// !SECTION 
 
-const deathMarch = new Audio("https://archive.org/embed/StarWarsTheImperialMarchDarthVadersTheme?autoplay=1");
-deathMarch.addEventListener("canplaythrough", () => {
-  deathMarch.play();
-})
-
-function playAudio() {
-  deathMarch.play();
-}
+// SECTION Logic Functions
 
 function calculatePower() {
   let combinedPower = 0;
@@ -61,19 +60,25 @@ function calculatePower() {
   return combinedPower
 }
 
-function attackBoss() {
-  let cbVariable = 0
-  cbVariable = calculatePower()
-  vader.health -= cbVariable
-  console.log("health: " + vader.health)
-  checkBossDead()
-  drawVillain();
-}
-
 function attackHeros() {
   heros.forEach((hero) => hero.health -= vader.power);
   console.log(heros);
+  checkHeroDead();
   drawHeros();
+}
+
+function checkHeroDead() {
+  let deadHeros = 0;
+  heros.forEach((hero) => {
+    if (hero.health <= 0) {
+      hero.health = 0;
+      deadHeros++;
+    }
+  })
+  if (deadHeros >= 4) {
+    window.alert(`You Lose! Try Again!`)
+    reset();
+  }
 }
 
 function checkBossDead() {
@@ -126,6 +131,23 @@ function drawVillain() {
   }
 }
 
+function reset() {
+  location.reload();
+}
+
+// !SECTION 
+
+// SECTION Onclick Functions
+
+function attackBoss() {
+  let cbVariable = 0
+  cbVariable = calculatePower()
+  vader.health -= cbVariable
+  console.log("health: " + vader.health)
+  checkBossDead()
+  drawVillain();
+}
+
 function buyForceHeal() {
   if (heros[0].gold >= 50) {
     forceHeal++;
@@ -147,6 +169,10 @@ function useForceHeal(name) {
   })
   drawHeros();
 };
+// !SECTION 
+
+
+//SECTION Interval Sets
 
   setInterval (attackHeros, 5000)
-
+// !SECTION 
