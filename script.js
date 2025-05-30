@@ -103,12 +103,15 @@ function drawHeros() {
     const heroElem = document.getElementById(hero.name)
     // heroElem.innerText = `${hero.name}`
     let healthElem = heroElem.querySelector(".health")
+    // @ts-ignore
     healthElem.innerText = `HP: ${hero.health}`
     let levelElem = heroElem.querySelector(".level")
+    // @ts-ignore
     levelElem.innerText = `LVL: ${hero.level}`
 
     if(hero.name == "luke"){
       let goldElem = heroElem.querySelector(".gold")
+      // @ts-ignore
       goldElem.innerText = `GOLD: ${hero.gold}`
     }
   }
